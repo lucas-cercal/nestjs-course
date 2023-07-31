@@ -30,12 +30,12 @@ export class CoursesController {
   }
 
   @Put(':id')
-  update(@Param('id') id: string, @Body() body: object) {
+  update(@Param('id') id: string) {
     return `Atualização do curso #${id}`;
   }
 
   @Delete(':id')
-  remove(@Param('id') id: string, @Body() body: object) {
+  remove(@Param('id') id: string) {
     return `Exclusão do curso #${id}`;
   }
 }
